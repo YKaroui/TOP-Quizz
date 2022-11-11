@@ -20,14 +20,14 @@ public class BackgroundColor {
             "#f092b0", // pink
             "#b7c0c7" // light gray}
     };
-    public int getColor(){
-        //Randomly generate a color
-        String color;
-        Random randomGenerator = new Random();
-        int randomNumber = randomGenerator.nextInt(mColors.length);
-        color = mColors[randomNumber];
-        int colorAsInt;
-        colorAsInt = Color.parseColor(color);
-        return colorAsInt;
-    }
+public int getColor(){
+    //Randomly generate a color
+    String color;
+    Random randomGenerator = new Random();
+    int randomNumber = randomGenerator.nextInt(mColors.length);
+    color = mColors[randomNumber];
+    int colorAsInt;
+    colorAsInt = Color.parseColor(color);
+    return colorAsInt;
+}
 }
