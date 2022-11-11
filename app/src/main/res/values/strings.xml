@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">TOP Quizz</string>
+    <string name="Dev1_name">Yassine KAROUI</string>
+    <string name="Dev1_email">karoui.yassine@esprit.tn</string>
+    <string name="Dev2_name">Oussema ZRIBI</string>
+    <string name="Dev2_email">oussema.zribi@esprit.tn</string>
+    <string name="app_name">QuizApp</string>
+    <string name="your_score">Your Score</string>
+    <string name="angel_jude_suarez">Angel Jude Suarez</string>
+    <string name="suarez081119_gmail_com">suarez081119@gmail.com</string>
+    <string name="glenn_azuelo">Glenn Azuelo</string>
+    <string name="glennazuelo1_gmail_com">glennazuelo1@gmail.com</string>
+    <string name="quizapp">QuizApp</string>
 </resources>
