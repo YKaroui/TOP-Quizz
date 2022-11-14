@@ -18,8 +18,11 @@
         android:layout_above="@+id/button2"
         android:layout_alignStart="@+id/editName"
         android:layout_alignLeft="@+id/editName"
-        android:layout_marginBottom="25dp"
-        android:background="#29FF22"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_button"
         android:text="Start"
         android:textColor="#ffffff"
         android:textSize="30dp" />
@@ -37,7 +40,8 @@
         android:shadowRadius = "1"
         android:hint="Enter your username"
         android:inputType="textPersonName"
-        android:textColor="#df040b" />
+        android:textColor="#df040b"
+        />
 
     <Button
         android:id="@+id/button2"
@@ -46,19 +50,40 @@
         android:layout_alignStart="@+id/button"
         android:layout_alignLeft="@+id/button"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="33dp"
-        android:background="#01579B"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="122dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#808080"
         android:text="About"
         android:textColor="#ffffff"
-        android:textSize="30dp" />
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"/>
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="400dp"
-        android:layout_height="350dp"
-        app:srcCompat="@drawable/main_icon"
+        android:layout_height="250dp"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="77dp"
+        app:srcCompat="@drawable/main_icon" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_marginTop="20dp"
+        android:layout_width="315dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/welcome"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms and conditions apply \n POWERD BY - 5SAE1"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        />
+        android:textAlignment="center"
+        android:textColor="#808080"/>
 
 </RelativeLayout>
