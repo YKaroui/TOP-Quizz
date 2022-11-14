@@ -15,7 +15,6 @@ public class QuestionsActivity extends AppCompatActivity {
     Button submitbutton, quitbutton;
     RadioGroup radio_g;
     RadioButton rb1,rb2,rb3,rb4;
-
     String questions[] = {
                             "Which method can be defined only once in a program?",
                             "Which of these is not a bitwise operator?",
@@ -49,14 +48,15 @@ public class QuestionsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_questions);
 
         final TextView score = (TextView)findViewById(R.id.textView4);
-        TextView textView=(TextView)findViewById(R.id.DispName);
+        //TextView textView=(TextView)findViewById(R.id.DispName);
+        TextView questionNumber = (TextView)findViewById(R.id.textView9);
         Intent intent = getIntent();
         String name= intent.getStringExtra("myname");
 
-        if (name.trim().equals(""))
+        /*if (name.trim().equals(""))
             textView.setText("Hello User");
         else
-        textView.setText("Hello " + name);
+        textView.setText("Hello " + name);*/
 
         submitbutton=(Button)findViewById(R.id.button3);
         quitbutton=(Button)findViewById(R.id.buttonquit);
@@ -68,6 +68,7 @@ public class QuestionsActivity extends AppCompatActivity {
         rb3=(RadioButton)findViewById(R.id.radioButton3);
         rb4=(RadioButton)findViewById(R.id.radioButton4);
         tv.setText(questions[flag]);
+        questionNumber.setText("Question - "+(flag+1));
         rb1.setText(opt[0]);
         rb2.setText(opt[1]);
         rb3.setText(opt[2]);
@@ -96,7 +97,7 @@ public class QuestionsActivity extends AppCompatActivity {
                 }
 
                 flag++;
-
+                questionNumber.setText("Question - "+ (flag+1));
                 if (score != null)
                     score.setText(""+correct);
 
